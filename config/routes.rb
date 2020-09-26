@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   delete '/log_out', to: 'sessions#log_out'
   resources :posts
   resources :users
-  get '*path', to: 'application#frontend'
+  get '*path', to: 'static#frontend'
 end
