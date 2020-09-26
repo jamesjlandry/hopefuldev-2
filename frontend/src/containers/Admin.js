@@ -7,6 +7,7 @@ import AdminLogin from '../components/AdminLogin'
 import NewPost from '../components/NewPost'
 import AdminBlogList from '../components/AdminBlogList'
 import EditPost from '../components/EditPost'
+import { BACKEND_URL } from '../constants'
 
 // checks for the site admin as the only user created. if the admin is not logged in, shows login box
 // otherwise the admin can make new blog posts and edit current posts from this page.
@@ -19,7 +20,7 @@ function Admin() {
   const dispatch = useDispatch()
 
     useEffect( async () => {
-      let response = await fetch('http://localhost:3000/logged_in', {
+      let response = await fetch(`${BACKEND_URL}/logged_in`, {
             credentials: 'include',
             
         })
@@ -31,7 +32,7 @@ function Admin() {
     }, [])
 
     const handleLogout = async () => {
-      let response = await fetch('http://localhost:3000/log_out', {
+      let response = await fetch(`${BACKEND_URL}/log_out`, {
           credentials: 'include',
           method: 'DELETE'
       })

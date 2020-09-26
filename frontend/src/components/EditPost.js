@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useState } from 'react';
+import { BACKEND_URL } from '../constants'
 
 
 function EditPost() {
@@ -27,7 +28,7 @@ function EditPost() {
   };
 
   let editPost = async (post, currentPost) => {
-    let response = await fetch(`http://localhost:3000/posts/${currentPost.id}`, {
+    let response = await fetch(`${BACKEND_URL}/posts/${currentPost.id}`, {
         credentials: 'include',
         method: "PATCH",
         headers: {

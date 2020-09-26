@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useState } from 'react'
+import { BACKEND_URL } from '../constants'
 
 function AdminLogin() {
 
@@ -13,7 +14,7 @@ function AdminLogin() {
 
 
  let logIn = async (user) => {
-   let response = await fetch('http://localhost:3000/login', {
+   let response = await fetch(`${BACKEND_URL}/login`, {
        credentials: 'include',
        method: "POST",
        headers: {

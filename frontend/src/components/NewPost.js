@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useState } from 'react';
+import { BACKEND_URL } from '../constants'
 
 // this form creates a new post using current date time to add to the content. It currently only uses plain text, would like to add rich text component.
 // user information must be present to create posts. 
@@ -47,7 +48,7 @@ function NewPost() {
     };
 
       let createPost = async (post) => {
-        let response = await fetch('http://localhost:3000/posts', {
+        let response = await fetch(`${BACKEND_URL}/posts`, {
             credentials: 'include',
             method: "POST",
             headers: {
