@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.732c679a.chunk.css",
+    "main.js": "/static/js/main.44558b5f.chunk.js",
+    "main.js.map": "/static/js/main.44558b5f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8e62e3d2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8e62e3d2.js.map",
+    "static/js/2.1be27e94.chunk.js": "/static/js/2.1be27e94.chunk.js",
+    "static/js/2.1be27e94.chunk.js.map": "/static/js/2.1be27e94.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a05d77e7207bf760fe5828e766bcabc0.js": "/precache-manifest.a05d77e7207bf760fe5828e766bcabc0.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.732c679a.chunk.css.map": "/static/css/main.732c679a.chunk.css.map",
+    "static/js/2.1be27e94.chunk.js.LICENSE.txt": "/static/js/2.1be27e94.chunk.js.LICENSE.txt",
+    "static/media/choose.png": "/static/media/choose.fb5f718a.png",
+    "static/media/expertly_main_page.png": "/static/media/expertly_main_page.107c4246.png",
+    "static/media/landing_page.png": "/static/media/landing_page.d6f6ab3d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e62e3d2.js",
+    "static/js/2.1be27e94.chunk.js",
+    "static/css/main.732c679a.chunk.css",
+    "static/js/main.44558b5f.chunk.js"
+  ]
+}
