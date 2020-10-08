@@ -1,15 +1,21 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { BACKEND_URL } from '../constants'
+import { Editor, EditorState, RichUtils} from 'draft-js';
+import 'draft-js/dist/Draft.css';
 
 // this form creates a new post using current date time to add to the content. It currently only uses plain text, would like to add rich text component.
 // user information must be present to create posts. 
 function NewPost() {
     const dispatch = useDispatch() 
     const user = useSelector(state => state.currentUser) 
-     const [title, setTitle] = useState('')
-     const [content, setContent] = useState('')
+    const [title, setTitle] = useState('')
+    const [content, setContent] = useState('')
+    const [editorState, setEditorState] = useState(
+      () => EditorState.createEmpty(),
+    );
 
      const generateDate = () => {
       const now = new Date();
@@ -69,8 +75,9 @@ function NewPost() {
     <div className='page_background_blur'>
     <div className='post_form'>
       <button type='button' onClick={() => dispatch({type: 'NEW_BLOG_FALSE'})}>
-         Changed My Mind, Close Form
+         Close Form
        </button>
+      
        <form onSubmit={event => submitPost(event)}>
          <div className="blog_title" >
           <div>
@@ -90,6 +97,7 @@ function NewPost() {
             <div>
           
           </div>
+          {/* <Editor editorState={editorState} onChange={setEditorState} /> */}
           <textarea
             placeholder='Write some stuff'
             id="content"
@@ -100,6 +108,7 @@ function NewPost() {
             }}
             />
           </div>
+          
           <button type="submit">Make It So</button>
         </form>
     </div>
