@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { BACKEND_URL } from '../constants'
-import { Editor, EditorState, RichUtils} from 'draft-js';
-import 'draft-js/dist/Draft.css';
+import {  EditorState, convertToRaw } from 'draft-js';
+import { Editor } from 'react-draft-wysiwyg';
+
 
 // this form creates a new post using current date time to add to the content. It currently only uses plain text, would like to add rich text component.
 // user information must be present to create posts. 
@@ -28,7 +29,7 @@ function NewPost() {
         month = `0${month}`;
       }
   
-      const day = now.getDate();
+      let day = now.getDate();
       if (day < 10) {
         day = `0${day}`;
       }
@@ -46,7 +47,7 @@ function NewPost() {
         title: title,
         date_formatted: date.formatted,
         date_pretty: date.pretty,
-        content: content,
+        content: JSON.stringify(convertToRaw(editorState.getCurrentContent())),
         user_id: user.id
       };
       createPost(newPost)
@@ -68,8 +69,7 @@ function NewPost() {
          }
 
    
-         
-         
+     
 
   return (
     <div className='page_background_blur'>
@@ -97,8 +97,14 @@ function NewPost() {
             <div>
           
           </div>
-          {/* <Editor editorState={editorState} onChange={setEditorState} /> */}
-          <textarea
+          <Editor 
+            editorState={editorState} 
+            onEditorStateChange={setEditorState} 
+            wrapperClassName="rich-editor demo-wrapper"
+            editorClassName="demo-editor"
+            placeholder="Write something"
+          />
+          {/* <textarea
             placeholder='Write some stuff'
             id="content"
             type="text"
@@ -106,7 +112,7 @@ function NewPost() {
             onChange={({ target: { value } }) => {
               setContent(value);
             }}
-            />
+            /> */}
           </div>
           
           <button type="submit">Make It So</button>
