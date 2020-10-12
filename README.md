@@ -1,24 +1,6 @@
-# README
+Personal Website for project showcase and blogs. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Blogs use a rich text editor built with Draft-js and wisiwyg for draft-js. 
 
-Things you may want to cover:
+Rails backend serves the React frontend. Run npm run build from frontend to trigger updates to push changes to public folder when pushing to heroku for deployment. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
