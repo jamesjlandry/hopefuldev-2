@@ -45,13 +45,19 @@ const reducer = (currentState, action) => {
     }
 
     if (action.type === "UPDATE_POST") {
-        
-    
         return {
             ...currentState,
             posts: currentState.posts.map(post => post.id === action.post.id ? 
                 {...post, title: action.post.title, content: action.post.content} :
                 post),
+            editPost: false
+        }
+    }
+
+    if (action.type === "DELETE_POST") {
+        return {
+            ...currentState,
+            posts: currentState.posts.filter(post => post.id !== action.post.id),
             editPost: false
         }
     }

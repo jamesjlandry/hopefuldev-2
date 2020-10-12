@@ -41,6 +41,25 @@ function EditPost() {
      dispatch({type: "UPDATE_POST", post: updatedPost})
      }
 
+    let deletePost = async (currentPost) => {
+      let response = await fetch(`${BACKEND_URL}/posts/${currentPost.id}`, {
+          credentials: 'include',
+          method: "DELETE",
+          headers: {
+              accept: 'application/json',
+              'content-type': 'application/json'
+          },
+          body: JSON.stringify(currentPost)
+      })
+      let result = await response.json()
+      if (result === 'success') {
+       dispatch({type: "DELETE_POST", post: currentPost
+       })
+      } else {
+        alert("post not deleted")
+      }
+    }
+
   // I would like to abstract the New Post and Edit Post form to be the same form so I am not repeating my work.
 
   return (
@@ -80,6 +99,7 @@ function EditPost() {
               />
             </div>
             <button type="submit">Make It So</button>
+            <button type="button" onClick={()=> deletePost(currentPost)}>Delete this sucker</button>
           </form>
       </div>
       </div>

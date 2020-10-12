@@ -8,6 +8,7 @@ import NewPost from '../components/NewPost'
 import AdminBlogList from '../components/AdminBlogList'
 import EditPost from '../components/EditPost'
 import { BACKEND_URL } from '../constants'
+import 'draft-js/dist/Draft.css';
 
 // checks for the site admin as the only user created. if the admin is not logged in, shows login box
 // otherwise the admin can make new blog posts and edit current posts from this page.
