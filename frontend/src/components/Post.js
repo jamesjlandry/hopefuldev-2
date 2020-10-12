@@ -17,10 +17,11 @@ function Post() {
     <React.Fragment>
       {
         showPost ?
-    <div className='blog_post' >
-      <div>
-        {currentPost.title}
+    <div className='blog_container' >
+      <div className={'post_title'}>
+        <strong>{currentPost.title}</strong>
       </div>
+      <br></br>
       <Editor 
         editorState={editorState}
         readOnly= "true"
