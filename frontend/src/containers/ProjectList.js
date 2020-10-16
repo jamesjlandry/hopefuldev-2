@@ -18,7 +18,7 @@ function ProjectList() {
           </div>
         </div> 
         <div className='project_card' >
-        <img src={require('../images/TheCursed/landing_page.png')} alt='The Cursed Home Page'></img>
+        <img src={require('../images/TheCursed/background.png')} alt='The Cursed Home Page'></img>
           <div className='cursed_card'><strong><h1>The Cursed</h1></strong></div>
           <div className='project_info'>
             <p>TableTop Roleplaying for the modern age. Build your character. Level them up. Try to take over the world. </p><a href='https://youtu.be/xLv1ZAYcieI' target="_blank" rel="noopener noreferrer" >YouTube Demo</a>

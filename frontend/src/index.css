@@ -4,8 +4,8 @@ body {
  
     font-family: Bookman, Book Antiqua3, Palatino, serif;
     font-size: 16px;
-    background: rgb(56, 50, 52);
-    color: rgb(205, 235, 223);
+    background: rgb(236, 232, 210);
+    color: rgb(36, 33, 30);
     -webkit-font-smoothing: antialiased;
     font-weight: 100;
     line-height: 185%;
@@ -32,7 +32,7 @@ body::-webkit-scrollbar {
   z-index: 6;
   top: 0;
   left: 0;
-  background-color: rgba(41, 39, 39, 0.9);
+  background-color: rgba(173, 161, 138, 0.9);
   width: 100%;
   margin: 0;
   padding-right: 1em;
@@ -70,6 +70,15 @@ a {
 
 }
 
+.home_page {
+  display: flex;
+
+}
+
+.home_page img{
+ width: 250px;
+ 
+}
 .page_background_blur{
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
