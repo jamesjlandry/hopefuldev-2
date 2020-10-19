@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 function ProjectList() {
   const showProjectList = useSelector(state => state.showProjectList)
-  const dispatch = useDispatch()
+  
   return (
     <React.Fragment >
        {showProjectList ?

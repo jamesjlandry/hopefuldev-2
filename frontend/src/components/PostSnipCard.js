@@ -23,7 +23,7 @@ export default function PostSnipCard (props) {
             {postContent.substring(0, 200)}...
           </div>
           <div className='read_more' onClick={()=> dispatch({type: 'SHOW_POST', currentPost: post})}>Read More -</div>
-        </div>)
+        </div>
         </div>
     )
 }

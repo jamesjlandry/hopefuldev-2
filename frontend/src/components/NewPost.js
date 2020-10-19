@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { BACKEND_URL } from '../constants'
 import {  EditorState, convertToRaw } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 
 // this form creates a new post using current date time to add to the content. It currently only uses plain text, would like to add rich text component.
@@ -13,7 +14,6 @@ function NewPost() {
     const dispatch = useDispatch() 
     const user = useSelector(state => state.currentUser) 
     const [title, setTitle] = useState('')
-    const [content, setContent] = useState('')
     const [editorState, setEditorState] = useState(
       () => EditorState.createEmpty(),
     );
