@@ -80,21 +80,34 @@ a {
 }
 
 .home_page {
-  display: flex;
-  margin-top: 2em;
-  position: fixed;
- 
-
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 37% 8% 8% 5% 3% 3% 3% 3% 5%;
+  justify-items: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-family: helvetica;
 }
 
 .home_page img{
- width: 250px;
- 
+  grid-row: 1;
+  width: 250px;
+  
 }
+
+.home_page h2{
+  font-size: 28px;
+}
+
+.home_page div{
+  font-size: 20px;
+}
+
 .page_background_blur{
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   position: fixed;
+  z-index: 7;
   background-size: cover;
   background-repeat: no-repeat;
   top: 0;
@@ -106,10 +119,10 @@ a {
 }
 
 .post_form_background {
+  position: absolute;
+  z-index: 7;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
-  z-index: 2;
-  position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   top: 0;
@@ -119,15 +132,13 @@ a {
 }
 
 .post_form {
-  margin: 2rem auto;
-  z-index: 1;
-  width: 92%;
+  margin: 3rem;
+  position: absolute;
+  z-index: 8;
+  width: 100%;
   height: 95%;
   padding: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  
   text-align: center;
   border-radius: 2px;
   overflow: scroll;
@@ -141,7 +152,7 @@ a {
   align-content: space-around;
   background-color: rgb(212, 207, 207);
   bottom: 1%;
- 
+  width: 99%;
   float: left;
   padding: 2px;
  
@@ -213,7 +224,7 @@ a {
 .log_out {
   position: fixed;
   z-index: 4;
-  margin-top: 7px;
+  margin-top: .7rem;
   font-size: 12px;
   color: rgb(73, 69, 59);
   top: 2em;
@@ -265,6 +276,7 @@ a {
   min-width: 100%;
 }
 .project_list {
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   z-index: 1;
@@ -281,12 +293,11 @@ a {
   max-width: 300px;
   position: relative;
   z-index: 2;
-  height: 10em;
+  height: 10rem;
   border-radius: 10px;
   overflow: hidden;
   transition: .2s ;
   align-content: center;
-  margin: 1em;
   transition: 1s ease-in-out;
 }
 
@@ -425,8 +436,11 @@ a {
  }
 
  .about {
-   padding: 2rem;
+   padding: 1.5rem;
+ }
 
+ .about h2{
+   margin: 0px;
  }
 
  .post_title {
@@ -479,6 +493,42 @@ a {
   height: 100%;
 }
 
+.home_page {
+  display: grid;
+  grid-template-columns: 45% 60%;
+  grid-template-rows: 12% 5% 8% 10% 10%;
+  justify-items: left;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.home_page img{
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.home_page h2{
+  font-size: 30px;
+  margin: .1rem;
+}
+
+.home_page div{
+  grid-column: 2;
+  font-size: 26px;
+  margin: .1rem;
+}
+
+}
+
+.Admin {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 3rem;
+  transition: .3s;
+}
+
 .Admin form{
   background: rgb(44, 42, 42);
   min-width: 500px;
@@ -486,13 +536,6 @@ a {
 
 }
 
-}
-
-.Admin {
-  margin-left: 1em;
-  margin-right: 1em;
-  transition: .3s;
-}
 .Admin button {
   font-family: Didot;
   background: none;
@@ -524,6 +567,7 @@ a {
 }
 
 .new_post{
+  position: relative;
   z-index: 3;
   font-size: 17px;
   text-align: left;
@@ -559,8 +603,9 @@ a {
   width: 90%;
 }
 
-Admin button{
-  grid-column: 1;
-  grid-row: 3;
-  
+
+.admin_blog_container {
+  position: relative;
+  margin: 4rem;
+
 }

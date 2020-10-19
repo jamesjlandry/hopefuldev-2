@@ -12,7 +12,16 @@ function Home() {
     {showHome ? 
     <div className='home_page' > <br></br>
     <img src={require('../images/home/Hdlogo.png')} alt='Hopeful Dev logo'></img>
+    <h2>Hopeful Dev</h2>
+    <br></br>
+    <div>Developer</div>
+    <br></br>
+    <div>Leader</div>
+    <br></br>
+    <div>Artist</div>
     </div>
+    
+
     :
     null}
     </div>

@@ -100,8 +100,11 @@ function NewPost() {
           <Editor 
             editorState={editorState} 
             onEditorStateChange={setEditorState} 
-            wrapperClassName="rich-editor demo-wrapper"
-            editorClassName="demo-editor"
+            // wrapperClassName="rich-editor demo-wrapper"
+            // editorClassName="demo-editor"
+            toolbarClassName="toolbarClassName"
+            wrapperClassName="wrapperClassName"
+            editorClassName="editorClassName"
             placeholder="Write something"
           />
           {/* <textarea

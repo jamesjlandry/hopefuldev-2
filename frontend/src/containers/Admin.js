@@ -42,9 +42,9 @@ function Admin() {
     }
  
   return (
-    <div className="Admin">
+    <div >
      {loggedIn ? 
-     <div>
+     <div className="Admin" >
        <button className='log_out' type='button' onClick={() => handleLogout()}>Log Out</button>
        
        {newBlogPost ?

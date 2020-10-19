@@ -11,7 +11,7 @@ function AdminBlogList() {
 
 
   return (
-    <div className='blog_container'> 
+    <div className='admin_blog_container'> 
       {posts.map(post => (
       <div >
         <div>
