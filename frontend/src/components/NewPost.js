@@ -8,8 +8,7 @@ import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 
-// this form creates a new post using current date time to add to the content. It currently only uses plain text, would like to add rich text component.
-// user information must be present to create posts. 
+
 function NewPost() {
     const dispatch = useDispatch() 
     const user = useSelector(state => state.currentUser) 
@@ -100,22 +99,12 @@ function NewPost() {
           <Editor 
             editorState={editorState} 
             onEditorStateChange={setEditorState} 
-            // wrapperClassName="rich-editor demo-wrapper"
-            // editorClassName="demo-editor"
             toolbarClassName="toolbarClassName"
             wrapperClassName="wrapperClassName"
             editorClassName="editorClassName"
             placeholder="Write something"
           />
-          {/* <textarea
-            placeholder='Write some stuff'
-            id="content"
-            type="text"
-            value={content}
-            onChange={({ target: { value } }) => {
-              setContent(value);
-            }}
-            /> */}
+         
           </div>
           
           <button type="submit">Make It So</button>

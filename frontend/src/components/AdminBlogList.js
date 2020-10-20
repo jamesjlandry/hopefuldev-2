@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom'
+import AdminPostSnipCard from '../components/AdminPostSnipCard'
 
 
 function AdminBlogList() {
@@ -11,23 +11,10 @@ function AdminBlogList() {
 
 
   return (
-    <div className='admin_blog_container'> 
-      {posts.map(post => (
-      <div >
-        <div>
-          {post.title}
-        </div>
-        <div className='blog_snip'>
-          <p>
-            {post.content.substring(0, 200)}...
-          </p>
-          <button type='button' onClick={()=> dispatch({type: "EDIT_CURRENT_POST", currentPost: post})}>Edit Post</button>
-         
-        </div>
-      </div>)
-      )}
-     
-    </div>
+    
+    <div className='admin_blog_container'>
+        {posts.map(post => <AdminPostSnipCard post={post}/>)}
+      </div> 
   );
 }
 

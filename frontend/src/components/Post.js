@@ -1,12 +1,11 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-// import { Editor } from 'react-draft-wysiwyg';
+import { useSelector } from 'react-redux';
 import {  Editor, EditorState, convertFromRaw } from 'draft-js';
 function Post() {
 
   const currentPost = useSelector(state => state.currentPost)
   const showPost = useSelector(state => state.showPost)
-  const dispatch = useDispatch()
+  
   if(showPost === false) {
     return null
   }

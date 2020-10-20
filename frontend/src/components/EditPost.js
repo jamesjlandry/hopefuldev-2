@@ -2,7 +2,9 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { BACKEND_URL } from '../constants'
-
+import {  EditorState, convertToRaw, convertFromRaw } from 'draft-js';
+import { Editor } from 'react-draft-wysiwyg';
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 function EditPost() {
 
@@ -11,16 +13,15 @@ function EditPost() {
   const currentPost = useSelector(state => state.currentPost)
   const dispatch = useDispatch()
   const [title, setTitle] = useState(currentPost.title)
-  const [content, setContent] = useState(currentPost.content)
-
-  
+  const [editorState, setEditorState] = useState(() => EditorState.createEmpty())
+  let selectedPost = EditorState.createWithContent(convertFromRaw(JSON.parse(currentPost.content)))
 
  const submitPost = (e, currentPost) => {
     e.preventDefault();
     const updatedPost = {
       title: title,
       
-      content: content,
+      content: JSON.stringify(convertToRaw(editorState.getCurrentContent())),
       user_id: user.id
     };
     editPost(updatedPost, currentPost)
@@ -59,13 +60,12 @@ function EditPost() {
         alert("post not deleted")
       }
     }
-
-  // I would like to abstract the New Post and Edit Post form to be the same form so I am not repeating my work.
-
+  
   return (
    <div>
      {loggedIn ?
       <div className='page_background_blur'>
+        
       <div className='post_form'>
         <button type='button' onClick={() => dispatch({type: 'EDIT_BLOG_FALSE'})}>
            Changed My Mind, Close Form
@@ -89,14 +89,14 @@ function EditPost() {
               <div>
            
             </div>
-            <textarea
-              id="content"
-              type="text"
-              value={content}
-              onChange={({ target: { value } }) => {
-                setContent(value);
-              }}
-              />
+            <Editor 
+            
+            defaultEditorState={selectedPost} 
+            onEditorStateChange={setEditorState} 
+            toolbarClassName="toolbarClassName"
+            wrapperClassName="wrapperClassName"
+            editorClassName="editorClassName"
+          />
             </div>
             <button type="submit">Make It So</button>
             <button type="button" onClick={()=> deletePost(currentPost)}>Delete this sucker</button>
