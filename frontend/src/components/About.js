@@ -13,7 +13,7 @@ function About() {
         <div>
         <h2>Hi. I'm James.</h2>
         <h2>I'm a junior full stack web developer.</h2> 
-        <p>After spending 12 years as a people leader of with a penchant for creative problem solving, I'm turning my creativity towards Software Development.</p>
+        <p>After spending 12 years as a people leader with a penchant for creative problem solving, I'm turning my creativity towards Software Development.</p>
         </div>
         <img src={require('../images/About/james.jpg')} alt='James Landry'></img>
       </div>

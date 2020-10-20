@@ -292,6 +292,7 @@ a {
 }
 
 .project_card {
+  margin: 1rem;
   width: 100%;
   min-width: 220px;
   max-width: 300px;
@@ -451,6 +452,8 @@ a {
 
  .about img{
    width: 200px;
+   border-radius: 5px;
+  overflow: hidden;
  }
 
  .post_title {
@@ -495,6 +498,8 @@ a {
 .about img{
   margin-top: 1rem;
   grid-column: 2;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 
