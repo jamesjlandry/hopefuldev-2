@@ -25,6 +25,23 @@ body::-webkit-scrollbar {
 
 }
 
+/* div.DraftEditor-root {
+  position: absolute;
+  border: 1px solid #0000;
+  background-color: rgb(170, 159, 159);
+ 
+  width: 700px;
+  top: 60%;
+  margin: 20%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+}
+
+div.DraftEditor-editorContainer,
+div.public-DraftEditor-content {
+  height: 50%;
+} */
+
 .nav {
   font-family: Helvetica;
   font-weight: 400;
@@ -138,12 +155,12 @@ a {
   position: absolute;
   z-index: 8;
   width: 100%;
-  height: 95%;
+  height: 80%;
+  left: 17%;
   padding: 40px;
-  
   text-align: center;
   border-radius: 2px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .blog_title{
