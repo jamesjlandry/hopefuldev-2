@@ -9,7 +9,7 @@ export default function PostSnipCard (props) {
     const dispatch = useDispatch()
     let postContent = editorState.getCurrentContent()
     postContent = postContent.getPlainText()
-    console.log(postContent)
+   
     return (
         <div>
  <div className='blog_snip' key={post.id}>

@@ -8,13 +8,13 @@ import PostSnipCard from '../components/PostSnipCard';
 function BlogList() {
     const showBlogList = useSelector(state => state.showBlogList)
     const posts = useSelector(state => state.posts)
-    
+    const sortedPosts = posts.sort((a,b) => b.id - a.id);
     
   return (
     <div >
      {showBlogList ?
     <div className='blog_container'>
-        {posts.map(post => <PostSnipCard post={post}/>)}
+        {sortedPosts.map(post => <PostSnipCard key={post.id} post={post}/>)}
       </div> 
     :
     null
