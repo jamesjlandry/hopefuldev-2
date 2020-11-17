@@ -1,30 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.841a541f.chunk.css",
-    "main.js": "/static/js/main.01731748.chunk.js",
-    "main.js.map": "/static/js/main.01731748.chunk.js.map",
+    "main.css": "/static/css/main.77a7310c.chunk.css",
+    "main.js": "/static/js/main.4b9a96ad.chunk.js",
+    "main.js.map": "/static/js/main.4b9a96ad.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8e62e3d2.js",
     "runtime-main.js.map": "/static/js/runtime-main.8e62e3d2.js.map",
     "static/css/2.c24cf378.chunk.css": "/static/css/2.c24cf378.chunk.css",
-    "static/js/2.8b2c2c22.chunk.js": "/static/js/2.8b2c2c22.chunk.js",
-    "static/js/2.8b2c2c22.chunk.js.map": "/static/js/2.8b2c2c22.chunk.js.map",
+    "static/js/2.27f9cd18.chunk.js": "/static/js/2.27f9cd18.chunk.js",
+    "static/js/2.27f9cd18.chunk.js.map": "/static/js/2.27f9cd18.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3c7eb6b808ea67b10ab2039d5830846d.js": "/precache-manifest.3c7eb6b808ea67b10ab2039d5830846d.js",
+    "precache-manifest.5520ed95fc59d506e7f887fe40c95c16.js": "/precache-manifest.5520ed95fc59d506e7f887fe40c95c16.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.c24cf378.chunk.css.map": "/static/css/2.c24cf378.chunk.css.map",
-    "static/css/main.841a541f.chunk.css.map": "/static/css/main.841a541f.chunk.css.map",
-    "static/js/2.8b2c2c22.chunk.js.LICENSE.txt": "/static/js/2.8b2c2c22.chunk.js.LICENSE.txt",
+    "static/css/main.77a7310c.chunk.css.map": "/static/css/main.77a7310c.chunk.css.map",
+    "static/js/2.27f9cd18.chunk.js.LICENSE.txt": "/static/js/2.27f9cd18.chunk.js.LICENSE.txt",
     "static/media/Hdlogo.png": "/static/media/Hdlogo.0ae3cc77.png",
     "static/media/background.png": "/static/media/background.a53905aa.png",
     "static/media/choose.png": "/static/media/choose.fb5f718a.png",
     "static/media/expertly_main_page.png": "/static/media/expertly_main_page.107c4246.png",
-    "static/media/james.jpg": "/static/media/james.df2f24a7.jpg"
+    "static/media/james.jpg": "/static/media/james.df2f24a7.jpg",
+    "static/media/precarious_gameplay.png": "/static/media/precarious_gameplay.a7f56b6f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8e62e3d2.js",
     "static/css/2.c24cf378.chunk.css",
-    "static/js/2.8b2c2c22.chunk.js",
-    "static/css/main.841a541f.chunk.css",
-    "static/js/main.01731748.chunk.js"
+    "static/js/2.27f9cd18.chunk.js",
+    "static/css/main.77a7310c.chunk.css",
+    "static/js/main.4b9a96ad.chunk.js"
   ]
 }

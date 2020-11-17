@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b2f8b49a281033c18689e98a5d0132dd",
+    "revision": "8ab3b85279f19270a8ba2f12c46adcdf",
     "url": "/index.html"
   },
   {
-    "revision": "fb6f61be004d4007fa59",
+    "revision": "431f51c8e96d5c540ff4",
     "url": "/static/css/2.c24cf378.chunk.css"
   },
   {
-    "revision": "5e8e5f96a805029e8eb7",
-    "url": "/static/css/main.841a541f.chunk.css"
+    "revision": "afcd6a1e71a54a1df021",
+    "url": "/static/css/main.77a7310c.chunk.css"
   },
   {
-    "revision": "fb6f61be004d4007fa59",
-    "url": "/static/js/2.8b2c2c22.chunk.js"
+    "revision": "431f51c8e96d5c540ff4",
+    "url": "/static/js/2.27f9cd18.chunk.js"
   },
   {
     "revision": "c2ea29243182ea49829a817a0b8edf52",
-    "url": "/static/js/2.8b2c2c22.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.27f9cd18.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5e8e5f96a805029e8eb7",
-    "url": "/static/js/main.01731748.chunk.js"
+    "revision": "afcd6a1e71a54a1df021",
+    "url": "/static/js/main.4b9a96ad.chunk.js"
   },
   {
     "revision": "7bc5dd5f84b79beacbef",
@@ -46,5 +46,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "df2f24a79ec0fdf739452e4755adc5f7",
     "url": "/static/media/james.df2f24a7.jpg"
+  },
+  {
+    "revision": "a7f56b6f58167252d953da6b75d8912a",
+    "url": "/static/media/precarious_gameplay.a7f56b6f.png"
   }
 ]);
