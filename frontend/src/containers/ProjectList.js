@@ -25,6 +25,15 @@ function ProjectList() {
           </div>
         </div> 
         <div className='project_card' >
+          <img src={require('../images/Precarious/precarious_gameplay.png')} alt='Precarious Game'></img>
+          <div className='precarious_card'><strong><h1>Precarious!</h1></strong></div>
+          <div className='project_info'>
+            <p>Be the first to buzz in and win the points in this real time quiz game optimized for mobile. </p>
+            <a href='https://github.com/jamesjlandry/precarious' target="_blank" rel="noopener noreferrer" >GitHub Repo</a>
+            <a href='https://dry-depths-01460.herokuapp.com/' target="_blank" rel="noopener noreferrer" >Website</a>
+          </div>
+        </div> 
+        <div className='project_card' >
           <img src={require('../images/Choose/choose.png')} alt='Choose Your Own Adventure Game'></img>
           <div className='choose_adventure_card'><strong><h1>Choose Your Own<br></br> Adventure</h1></strong></div>
           <div className='project_info'>
