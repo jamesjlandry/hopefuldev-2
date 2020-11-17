@@ -30,7 +30,7 @@ function ProjectList() {
           <div className='project_info'>
             <p>Be the first to buzz in and win the points in this real time quiz game optimized for mobile. </p>
             <a href='https://github.com/jamesjlandry/precarious' target="_blank" rel="noopener noreferrer" >GitHub Repo</a>
-            <a href='https://dry-depths-01460.herokuapp.com/' target="_blank" rel="noopener noreferrer" >Website</a>
+            <a className="website_anchor" href='https://dry-depths-01460.herokuapp.com/' target="_blank" rel="noopener noreferrer" >Website</a>
           </div>
         </div> 
         <div className='project_card' >

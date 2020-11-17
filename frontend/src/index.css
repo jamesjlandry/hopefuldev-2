@@ -358,6 +358,19 @@ a {
   transition: all 1s ease-in-out;
 }
 
+.precarious_card {
+  font-family: Didot;
+  font-size: 18px;
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(23, 27, 19, 0.8);
+  color: #ece1f5;
+  padding-top: 1.7em;
+  transition: all 1s ease-in-out;
+}
+
 .project_info {
   display: block;
   position: absolute;
@@ -371,6 +384,8 @@ a {
   border-radius: 10px;
   overflow: hidden;
 }
+
+
 
 .project_info p{
   align-content: center;
@@ -403,6 +418,13 @@ a {
   transition: all .4s; 
 }
 
+.project_info a.website_anchor {
+  position: absolute;
+  left: 55%;
+  top: 78%;
+  transition: all .4s; 
+}
+
 .project_info a:hover{
   color: #b44949;
   cursor: pointer;
@@ -413,11 +435,19 @@ a {
   transition: all .5s ease-in-out;
 }
 
+.precarious_card h1{
+  transition: all .5s ease-in-out;
+}
+
 .project_card:hover .project_info{
  opacity: 1;
 }
 
-
+.project_card:hover .precarious_card h1{
+  opacity: 0%;
+  font-size: 22px;
+ 
+ }
 
 .project_card:hover .expertly_card h1{
  opacity: 0%;
